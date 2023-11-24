@@ -1,0 +1,16 @@
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\bin\Debug\net6.0-windows\DashBoard_From.exe
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\bin\Debug\net6.0-windows\DashBoard_From.deps.json
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\bin\Debug\net6.0-windows\DashBoard_From.runtimeconfig.json
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\bin\Debug\net6.0-windows\DashBoard_From.dll
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\bin\Debug\net6.0-windows\DashBoard_From.pdb
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.Form1.resources
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.csproj.GenerateResource.cache
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.AssemblyInfoInputs.cache
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.AssemblyInfo.cs
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.csproj.CoreCompileInputs.cache
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.dll
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\refint\DashBoard_From.dll
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.pdb
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.genruntimeconfig.cache
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\ref\DashBoard_From.dll
