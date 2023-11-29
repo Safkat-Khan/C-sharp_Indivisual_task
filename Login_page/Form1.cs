@@ -1,11 +1,17 @@
+using System.Data;
+using System.Data.SqlClient;
+
 namespace Login_page
 {
     public partial class Form1 : Form
+
     {
         public Form1()
         {
             InitializeComponent();
         }
+
+        string contStg = @"Data Source=SAFKAT-LAPTOP\MSSQLSERVER01;Initial Catalog=Register;Integrated Security=True";
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -25,19 +31,48 @@ namespace Login_page
         {
             if (checkBox1.Checked == true)
             {
-                textBox5.UseSystemPasswordChar = false;
-                textBox6.UseSystemPasswordChar = false;
+                txtpass.UseSystemPasswordChar = false;
+                txtconPass.UseSystemPasswordChar = false;
             }
             else
             {
-                textBox5.UseSystemPasswordChar = true;
-                textBox6.UseSystemPasswordChar = true;
+                txtpass.UseSystemPasswordChar = true;
+                txtconPass.UseSystemPasswordChar = true;
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if(txtusrnme.Text == "" || txtpass.Text == "" || txtconPass.Text == "")
+            {
+                MessageBox.Show("Please fill manatory fiels");
+            }
+            else if(txtpass.Text != txtconPass.Text)
+            {
+                MessageBox.Show("Password do not match");
+            }
+            else {
+                using (SqlConnection sqlCon = new SqlConnection(contStg))
+                {
+                    sqlCon.Open();
+                    SqlCommand sqlCmd = new SqlCommand("userAdd", sqlCon);
+                    sqlCmd.CommandType = CommandType.StoredProcedure;
+                    sqlCmd.Parameters.AddWithValue("@FirstName", txtfstnme.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@LastName", txtlstnme.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Email", txtemail.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@UserName", txtusrnme.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Password", txtpass.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@ConfirmPassword", txtconPass.Text.Trim());
+                    sqlCmd.ExecuteNonQuery();
+                    MessageBox.Show("Registration is Successfull");
 
+                    Clear();
+                }
+            }
+        }
+        void Clear()
+        {
+            txtfstnme.Text = txtlstnme.Text = txtemail.Text = txtusrnme.Text = txtpass.Text = txtconPass.Text = "";
         }
     }
 }

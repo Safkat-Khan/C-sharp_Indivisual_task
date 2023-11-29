@@ -14,3 +14,4 @@ C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0
 C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.pdb
 C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.genruntimeconfig.cache
 C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\ref\DashBoard_From.dll
+C:\Users\CCB\OneDrive\Desktop\C# Indivisual_task\DashBoard_From\obj\Debug\net6.0-windows\DashBoard_From.Properties.Resources.resources
