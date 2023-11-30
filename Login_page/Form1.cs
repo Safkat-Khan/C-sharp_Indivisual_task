@@ -1,78 +1,83 @@
-using System.Data;
-using System.Data.SqlClient;
-
 namespace Login_page
 {
     public partial class Form1 : Form
-
     {
         public Form1()
         {
             InitializeComponent();
         }
+        private void button1_Enter(object sender, EventArgs e)
+        {
 
-        string contStg = @"Data Source=SAFKAT-LAPTOP\MSSQLSERVER01;Initial Catalog=Register;Integrated Security=True";
+        }
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Enter Your Email")
+            {
+                textBox1.Text = "";
+
+                textBox1.ForeColor = Color.Black;
+            }
+        }
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Enter Your Email";
+
+                textBox1.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "Enter Your Password")
+            {
+                textBox2.Text = "";
+
+                textBox2.ForeColor = Color.Black;
+                textBox2.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+            {
+                textBox2.Text = "Enter Your Password";
+
+                textBox2.ForeColor = Color.Gray;
+                textBox2.UseSystemPasswordChar = false;
+            }
+        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
             MaximizeBox = false;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
             {
-                txtpass.UseSystemPasswordChar = false;
-                txtconPass.UseSystemPasswordChar = false;
+                textBox2.UseSystemPasswordChar = false;
             }
             else
             {
-                txtpass.UseSystemPasswordChar = true;
-                txtconPass.UseSystemPasswordChar = true;
+                textBox2.UseSystemPasswordChar = true;
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if(txtusrnme.Text == "" || txtpass.Text == "" || txtconPass.Text == "")
-            {
-                MessageBox.Show("Please fill manatory fiels");
-            }
-            else if(txtpass.Text != txtconPass.Text)
-            {
-                MessageBox.Show("Password do not match");
-            }
-            else {
-                using (SqlConnection sqlCon = new SqlConnection(contStg))
-                {
-                    sqlCon.Open();
-                    SqlCommand sqlCmd = new SqlCommand("userAdd", sqlCon);
-                    sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("@FirstName", txtfstnme.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@LastName", txtlstnme.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Email", txtemail.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@UserName", txtusrnme.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Password", txtpass.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@ConfirmPassword", txtconPass.Text.Trim());
-                    sqlCmd.ExecuteNonQuery();
-                    MessageBox.Show("Registration is Successfull");
-
-                    Clear();
-                }
-            }
-        }
-        void Clear()
-        {
-            txtfstnme.Text = txtlstnme.Text = txtemail.Text = txtusrnme.Text = txtpass.Text = txtconPass.Text = "";
         }
     }
 }

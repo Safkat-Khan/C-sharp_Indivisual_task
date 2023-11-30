@@ -41,8 +41,21 @@
             button7 = new Button();
             label3 = new Label();
             label2 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            textBox1 = new TextBox();
+            label6 = new Label();
+            textBox2 = new TextBox();
+            label7 = new Label();
+            textBox3 = new TextBox();
+            label8 = new Label();
+            textBox4 = new TextBox();
+            dataGridView1 = new DataGridView();
+            button9 = new Button();
+            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -178,6 +191,117 @@
             label2.Size = new Size(157, 25);
             label2.TabIndex = 13;
             label2.Text = "Change Password";
+            label2.Click += label2_Click_2;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(480, 280);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 20);
+            label4.TabIndex = 14;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(396, 138);
+            label5.Name = "label5";
+            label5.Size = new Size(56, 25);
+            label5.TabIndex = 15;
+            label5.Text = "Tittle";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(396, 181);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(207, 27);
+            textBox1.TabIndex = 16;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(891, 138);
+            label6.Name = "label6";
+            label6.Size = new Size(108, 25);
+            label6.TabIndex = 17;
+            label6.Text = "Description";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(891, 168);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(254, 82);
+            textBox2.TabIndex = 18;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(396, 294);
+            label7.Name = "label7";
+            label7.Size = new Size(73, 25);
+            label7.TabIndex = 19;
+            label7.Text = "Budget";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(396, 344);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(207, 27);
+            textBox3.TabIndex = 20;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(891, 294);
+            label8.Name = "label8";
+            label8.Size = new Size(110, 25);
+            label8.TabIndex = 21;
+            label8.Text = "Hourly Rate";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(891, 347);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(207, 27);
+            textBox4.TabIndex = 20;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.HighlightText;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(396, 407);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(938, 304);
+            dataGridView1.TabIndex = 22;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(1240, 364);
+            button9.Name = "button9";
+            button9.Size = new Size(94, 37);
+            button9.TabIndex = 24;
+            button9.Text = "⟳ Refresh";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.OrangeRed;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button8.ForeColor = SystemColors.HighlightText;
+            button8.Location = new Point(800, 732);
+            button8.Name = "button8";
+            button8.Size = new Size(120, 45);
+            button8.TabIndex = 25;
+            button8.Text = "Log Out";
+            button8.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -185,6 +309,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1477, 807);
+            Controls.Add(button8);
+            Controls.Add(button9);
+            Controls.Add(dataGridView1);
+            Controls.Add(label8);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(label7);
+            Controls.Add(textBox2);
+            Controls.Add(label6);
+            Controls.Add(textBox1);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(button7);
@@ -203,6 +339,7 @@
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -220,5 +357,17 @@
         private Button button7;
         private Label label3;
         private Label label2;
+        private Label label4;
+        private Label label5;
+        private TextBox textBox1;
+        private Label label6;
+        private TextBox textBox2;
+        private Label label7;
+        private TextBox textBox3;
+        private Label label8;
+        private TextBox textBox4;
+        private DataGridView dataGridView1;
+        private Button button9;
+        private Button button8;
     }
 }

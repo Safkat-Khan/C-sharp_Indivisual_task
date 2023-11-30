@@ -31,5 +31,10 @@ namespace DashBoard_From
         {
 
         }
+
+        private void label2_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,248 +31,189 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            txtfstnme = new TextBox();
-            txtlstnme = new TextBox();
-            txtemail = new TextBox();
-            txtusrnme = new TextBox();
-            txtpass = new TextBox();
-            txtconPass = new TextBox();
+            textBox1 = new TextBox();
             button1 = new Button();
-            button2 = new Button();
-            label7 = new Label();
+            textBox2 = new TextBox();
             checkBox1 = new CheckBox();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            button2 = new Button();
+            label2 = new Label();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(129, 91);
+            pictureBox1.Location = new Point(0, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(390, 240);
+            pictureBox1.Size = new Size(541, 765);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(115, 380);
+            label1.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(652, 52);
             label1.Name = "label1";
-            label1.Size = new Size(94, 25);
+            label1.Size = new Size(127, 46);
             label1.TabIndex = 1;
-            label1.Text = "Firstname";
+            label1.Text = "Sign In";
             // 
-            // label2
+            // textBox1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(118, 440);
-            label2.Name = "label2";
-            label2.Size = new Size(91, 25);
-            label2.TabIndex = 2;
-            label2.Text = "Lastname";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(113, 560);
-            label3.Name = "label3";
-            label3.Size = new Size(96, 25);
-            label3.TabIndex = 3;
-            label3.Text = "Username";
-            label3.Click += label3_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(153, 505);
-            label4.Name = "label4";
-            label4.Size = new Size(56, 25);
-            label4.TabIndex = 4;
-            label4.Text = "Email";
-            label4.Click += label4_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(119, 622);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 25);
-            label5.TabIndex = 5;
-            label5.Text = "Password";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(47, 686);
-            label6.Name = "label6";
-            label6.Size = new Size(162, 25);
-            label6.TabIndex = 6;
-            label6.Text = "Confirm Password";
-            // 
-            // txtfstnme
-            // 
-            txtfstnme.Location = new Point(258, 378);
-            txtfstnme.Name = "txtfstnme";
-            txtfstnme.Size = new Size(256, 27);
-            txtfstnme.TabIndex = 7;
-            // 
-            // txtlstnme
-            // 
-            txtlstnme.Location = new Point(258, 438);
-            txtlstnme.Name = "txtlstnme";
-            txtlstnme.Size = new Size(256, 27);
-            txtlstnme.TabIndex = 8;
-            // 
-            // txtemail
-            // 
-            txtemail.Location = new Point(258, 503);
-            txtemail.Name = "txtemail";
-            txtemail.Size = new Size(256, 27);
-            txtemail.TabIndex = 9;
-            // 
-            // txtusrnme
-            // 
-            txtusrnme.Location = new Point(258, 558);
-            txtusrnme.Name = "txtusrnme";
-            txtusrnme.Size = new Size(256, 27);
-            txtusrnme.TabIndex = 10;
-            // 
-            // txtpass
-            // 
-            txtpass.Location = new Point(258, 620);
-            txtpass.Name = "txtpass";
-            txtpass.Size = new Size(256, 27);
-            txtpass.TabIndex = 11;
-            txtpass.UseSystemPasswordChar = true;
-            // 
-            // txtconPass
-            // 
-            txtconPass.Location = new Point(258, 684);
-            txtconPass.Name = "txtconPass";
-            txtconPass.Size = new Size(256, 27);
-            txtconPass.TabIndex = 12;
-            txtconPass.UseSystemPasswordChar = true;
+            textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = SystemColors.ControlDarkDark;
+            textBox1.Location = new Point(643, 182);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(246, 30);
+            textBox1.TabIndex = 2;
+            textBox1.Text = "Enter Your Email";
+            textBox1.Enter += textBox1_Enter;
+            textBox1.Leave += textBox1_Leave;
             // 
             // button1
             // 
-            button1.BackColor = Color.Silver;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(135, 809);
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Red;
+            button1.Location = new Point(1007, -1);
             button1.Name = "button1";
-            button1.Size = new Size(115, 49);
-            button1.TabIndex = 13;
-            button1.Text = "⬅ Back";
-            button1.UseVisualStyleBackColor = false;
+            button1.Size = new Size(68, 29);
+            button1.TabIndex = 1;
+            button1.Text = "✕";
+            button1.UseVisualStyleBackColor = true;
+            button1.Enter += button1_Enter;
             // 
-            // button2
+            // textBox2
             // 
-            button2.BackColor = Color.FromArgb(0, 102, 255);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(359, 809);
-            button2.Name = "button2";
-            button2.Size = new Size(142, 49);
-            button2.TabIndex = 14;
-            button2.Text = "🖋 Signup";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(257, 30);
-            label7.Name = "label7";
-            label7.Size = new Size(120, 41);
-            label7.TabIndex = 15;
-            label7.Text = "Signup";
+            textBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = SystemColors.ControlDarkDark;
+            textBox2.Location = new Point(643, 248);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(246, 30);
+            textBox2.TabIndex = 3;
+            textBox2.Text = "Enter Your Password";
+            textBox2.Enter += textBox2_Enter;
+            textBox2.Leave += textBox2_Leave;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(258, 740);
+            checkBox1.Location = new Point(657, 301);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(132, 24);
-            checkBox1.TabIndex = 16;
+            checkBox1.TabIndex = 4;
             checkBox1.Text = "Show Password";
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
-            // label8
+            // button2
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.Red;
-            label8.Location = new Point(513, 557);
-            label8.Name = "label8";
-            label8.Size = new Size(15, 20);
-            label8.TabIndex = 17;
-            label8.Text = "*";
+            button2.BackColor = Color.FromArgb(0, 64, 255);
+            button2.FlatAppearance.BorderColor = Color.Blue;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.HighlightText;
+            button2.Location = new Point(643, 349);
+            button2.Name = "button2";
+            button2.Size = new Size(246, 42);
+            button2.TabIndex = 5;
+            button2.Text = "Continue ➧";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
-            // label9
+            // label2
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.Red;
-            label9.Location = new Point(514, 616);
-            label9.Name = "label9";
-            label9.Size = new Size(15, 20);
-            label9.TabIndex = 17;
-            label9.Text = "*";
+            label2.AutoSize = true;
+            label2.Location = new Point(670, 422);
+            label2.Name = "label2";
+            label2.Size = new Size(203, 20);
+            label2.TabIndex = 6;
+            label2.Text = "or Connect with Social Media";
             // 
-            // label10
+            // button3
             // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.Red;
-            label10.Location = new Point(513, 684);
-            label10.Name = "label10";
-            label10.Size = new Size(15, 20);
-            label10.TabIndex = 17;
-            label10.Text = "*";
+            button3.BackColor = Color.RoyalBlue;
+            button3.FlatAppearance.BorderColor = Color.Blue;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.HighlightText;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.TopLeft;
+            button3.Location = new Point(643, 478);
+            button3.Name = "button3";
+            button3.Size = new Size(246, 45);
+            button3.TabIndex = 6;
+            button3.Text = "Facebook";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.White;
+            button4.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = SystemColors.WindowText;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.TopLeft;
+            button4.Location = new Point(643, 546);
+            button4.Name = "button4";
+            button4.Size = new Size(246, 46);
+            button4.TabIndex = 7;
+            button4.Text = "Gmail";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.White;
+            button5.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = SystemColors.WindowText;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.TopLeft;
+            button5.Location = new Point(643, 646);
+            button5.Name = "button5";
+            button5.Size = new Size(246, 46);
+            button5.TabIndex = 8;
+            button5.Text = "      Create an Account";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button4_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(760, 607);
+            label3.Name = "label3";
+            label3.Size = new Size(26, 20);
+            label3.TabIndex = 9;
+            label3.Text = "or,";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(647, 933);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(checkBox1);
-            Controls.Add(label7);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(txtconPass);
-            Controls.Add(txtpass);
-            Controls.Add(txtusrnme);
-            Controls.Add(txtemail);
-            Controls.Add(txtlstnme);
-            Controls.Add(txtfstnme);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
+            BackColor = Color.GhostWhite;
+            ClientSize = new Size(1075, 750);
             Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(checkBox1);
+            Controls.Add(button1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Registration";
+            Text = "Sign In";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -283,23 +224,15 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private TextBox txtfstnme;
-        private TextBox txtlstnme;
-        private TextBox txtemail;
-        private TextBox txtusrnme;
-        private TextBox txtpass;
-        private TextBox txtconPass;
+        private TextBox textBox1;
         private Button button1;
-        private Button button2;
-        private Label label7;
+        private TextBox textBox2;
         private CheckBox checkBox1;
-        private Label label8;
-        private Label label9;
-        private Label label10;
+        private Button button2;
+        private Label label2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Label label3;
     }
 }
