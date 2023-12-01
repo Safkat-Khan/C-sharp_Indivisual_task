@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtemail = new TextBox();
             button1 = new Button();
-            textBox2 = new TextBox();
+            txtpass = new TextBox();
             checkBox1 = new CheckBox();
             button2 = new Button();
             label2 = new Label();
             button3 = new Button();
-            button4 = new Button();
             button5 = new Button();
             label3 = new Label();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -63,17 +63,17 @@
             label1.TabIndex = 1;
             label1.Text = "Sign In";
             // 
-            // textBox1
+            // txtemail
             // 
-            textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = SystemColors.ControlDarkDark;
-            textBox1.Location = new Point(643, 182);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(246, 30);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "Enter Your Email";
-            textBox1.Enter += textBox1_Enter;
-            textBox1.Leave += textBox1_Leave;
+            txtemail.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtemail.ForeColor = SystemColors.ControlDarkDark;
+            txtemail.Location = new Point(643, 182);
+            txtemail.Name = "txtemail";
+            txtemail.Size = new Size(246, 30);
+            txtemail.TabIndex = 2;
+            txtemail.Text = "Enter Your Email";
+            txtemail.Enter += textBox1_Enter;
+            txtemail.Leave += textBox1_Leave;
             // 
             // button1
             // 
@@ -85,19 +85,20 @@
             button1.TabIndex = 1;
             button1.Text = "✕";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             button1.Enter += button1_Enter;
             // 
-            // textBox2
+            // txtpass
             // 
-            textBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = SystemColors.ControlDarkDark;
-            textBox2.Location = new Point(643, 248);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(246, 30);
-            textBox2.TabIndex = 3;
-            textBox2.Text = "Enter Your Password";
-            textBox2.Enter += textBox2_Enter;
-            textBox2.Leave += textBox2_Leave;
+            txtpass.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtpass.ForeColor = SystemColors.ControlDarkDark;
+            txtpass.Location = new Point(643, 248);
+            txtpass.Name = "txtpass";
+            txtpass.Size = new Size(246, 30);
+            txtpass.TabIndex = 3;
+            txtpass.Text = "Enter Your Password";
+            txtpass.Enter += textBox2_Enter;
+            txtpass.Leave += textBox2_Leave;
             // 
             // checkBox1
             // 
@@ -149,23 +150,7 @@
             button3.TabIndex = 6;
             button3.Text = "Facebook";
             button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.White;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = SystemColors.WindowText;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.TopLeft;
-            button4.Location = new Point(643, 546);
-            button4.Name = "button4";
-            button4.Size = new Size(246, 46);
-            button4.TabIndex = 7;
-            button4.Text = "Gmail";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button3.Click += button3_Click;
             // 
             // button5
             // 
@@ -193,22 +178,35 @@
             label3.TabIndex = 9;
             label3.Text = "or,";
             // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(643, 543);
+            button4.Name = "button4";
+            button4.Size = new Size(246, 46);
+            button4.TabIndex = 10;
+            button4.Text = "Gmail";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GhostWhite;
             ClientSize = new Size(1075, 750);
+            Controls.Add(button4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(button5);
-            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(checkBox1);
             Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtpass);
+            Controls.Add(txtemail);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -224,15 +222,15 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtemail;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox txtpass;
         private CheckBox checkBox1;
         private Button button2;
         private Label label2;
         private Button button3;
-        private Button button4;
         private Button button5;
         private Label label3;
+        private Button button4;
     }
 }

@@ -112,6 +112,7 @@
             label5.Size = new Size(90, 25);
             label5.TabIndex = 5;
             label5.Text = "Password";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -136,6 +137,7 @@
             txtlstnme.Name = "txtlstnme";
             txtlstnme.Size = new Size(256, 27);
             txtlstnme.TabIndex = 8;
+            txtlstnme.TextChanged += txtlstnme_TextChanged;
             // 
             // txtemail
             // 
@@ -166,6 +168,7 @@
             txtconPass.Size = new Size(256, 27);
             txtconPass.TabIndex = 12;
             txtconPass.UseSystemPasswordChar = true;
+            txtconPass.TextChanged += txtconPass_TextChanged;
             // 
             // button1
             // 
@@ -185,7 +188,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(359, 809);
+            button2.Location = new Point(354, 809);
             button2.Name = "button2";
             button2.Size = new Size(142, 49);
             button2.TabIndex = 14;
@@ -217,7 +220,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.ForeColor = Color.Red;
+            label8.ForeColor = Color.Salmon;
             label8.Location = new Point(513, 557);
             label8.Name = "label8";
             label8.Size = new Size(15, 20);

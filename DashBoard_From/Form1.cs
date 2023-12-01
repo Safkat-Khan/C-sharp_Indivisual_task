@@ -22,17 +22,7 @@ namespace DashBoard_From
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_2(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

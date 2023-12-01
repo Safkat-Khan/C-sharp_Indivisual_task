@@ -43,15 +43,16 @@ namespace Login_page
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(txtusrnme.Text == "" || txtpass.Text == "" || txtconPass.Text == "")
+            if (txtusrnme.Text == "" || txtpass.Text == "" || txtconPass.Text == "")
             {
                 MessageBox.Show("Please fill manatory fiels");
             }
-            else if(txtpass.Text != txtconPass.Text)
+            else if (txtpass.Text != txtconPass.Text)
             {
                 MessageBox.Show("Password do not match");
             }
-            else {
+            else
+            {
                 using (SqlConnection sqlCon = new SqlConnection(contStg))
                 {
                     sqlCon.Open();
@@ -73,6 +74,21 @@ namespace Login_page
         void Clear()
         {
             txtfstnme.Text = txtlstnme.Text = txtemail.Text = txtusrnme.Text = txtpass.Text = txtconPass.Text = "";
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtlstnme_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtconPass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

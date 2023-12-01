@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Sign UP\\Login_page.csproj",
-      "projectName": "Login_page",
-      "projectPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Sign UP\\Login_page.csproj",
+      "projectUniqueName": "C:\\Users\\CCB\\OneDrive\\Desktop\\Sign UP\\SignUp.csproj",
+      "projectName": "SignUp",
+      "projectPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\Sign UP\\SignUp.csproj",
       "packagesPath": "C:\\Users\\CCB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Sign UP\\obj\\",
+      "outputPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\Sign UP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

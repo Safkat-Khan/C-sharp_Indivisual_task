@@ -61,7 +61,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.FromArgb(102, 153, 255);
-            pictureBox2.Location = new Point(-1, -5);
+            pictureBox2.Location = new Point(1, -3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(1487, 95);
             pictureBox2.TabIndex = 1;
@@ -72,7 +72,7 @@
             button1.BackColor = Color.White;
             button1.FlatAppearance.BorderSize = 0;
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(1434, -3);
+            button1.Location = new Point(1432, -3);
             button1.Name = "button1";
             button1.Size = new Size(42, 42);
             button1.TabIndex = 2;
@@ -85,7 +85,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.HighlightText;
-            button2.Location = new Point(12, 219);
+            button2.Location = new Point(10, 219);
             button2.Name = "button2";
             button2.Size = new Size(248, 64);
             button2.TabIndex = 3;
@@ -95,14 +95,15 @@
             // 
             // button3
             // 
+            button3.BackColor = Color.White;
             button3.FlatAppearance.BorderSize = 0;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(12, 310);
+            button3.Location = new Point(10, 310);
             button3.Name = "button3";
             button3.Size = new Size(248, 64);
             button3.TabIndex = 4;
             button3.Text = "Post Job";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -110,7 +111,7 @@
             label1.BackColor = Color.FromArgb(102, 153, 255);
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.HighlightText;
-            label1.Location = new Point(363, 36);
+            label1.Location = new Point(361, 36);
             label1.Name = "label1";
             label1.Size = new Size(90, 23);
             label1.TabIndex = 5;
@@ -121,7 +122,7 @@
             // 
             pictureBox3.BackColor = Color.FromArgb(102, 153, 255);
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(29, 12);
+            pictureBox3.Location = new Point(27, 12);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(196, 183);
             pictureBox3.TabIndex = 6;
@@ -130,7 +131,7 @@
             // button4
             // 
             button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(12, 416);
+            button4.Location = new Point(10, 416);
             button4.Name = "button4";
             button4.Size = new Size(248, 64);
             button4.TabIndex = 7;
@@ -140,7 +141,7 @@
             // button5
             // 
             button5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(12, 524);
+            button5.Location = new Point(10, 524);
             button5.Name = "button5";
             button5.Size = new Size(248, 64);
             button5.TabIndex = 8;
@@ -150,7 +151,7 @@
             // button6
             // 
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.Location = new Point(12, 620);
+            button6.Location = new Point(10, 620);
             button6.Name = "button6";
             button6.Size = new Size(248, 64);
             button6.TabIndex = 9;
@@ -161,7 +162,7 @@
             // 
             button7.BackColor = Color.FromArgb(230, 115, 76);
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(12, 713);
+            button7.Location = new Point(10, 713);
             button7.Name = "button7";
             button7.Size = new Size(248, 64);
             button7.TabIndex = 10;
@@ -174,7 +175,7 @@
             label3.BackColor = Color.FromArgb(102, 153, 255);
             label3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.HighlightText;
-            label3.Location = new Point(263, 34);
+            label3.Location = new Point(261, 34);
             label3.Name = "label3";
             label3.Size = new Size(89, 25);
             label3.TabIndex = 12;
@@ -186,17 +187,16 @@
             label2.BackColor = Color.FromArgb(102, 153, 255);
             label2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.HighlightText;
-            label2.Location = new Point(1247, 36);
+            label2.Location = new Point(1245, 36);
             label2.Name = "label2";
             label2.Size = new Size(157, 25);
             label2.TabIndex = 13;
             label2.Text = "Change Password";
-            label2.Click += label2_Click_2;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(480, 280);
+            label4.Location = new Point(478, 280);
             label4.Name = "label4";
             label4.Size = new Size(0, 20);
             label4.TabIndex = 14;
@@ -205,15 +205,16 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(396, 138);
+            label5.Location = new Point(394, 138);
             label5.Name = "label5";
             label5.Size = new Size(56, 25);
             label5.TabIndex = 15;
             label5.Text = "Tittle";
+            label5.Click += label5_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(396, 181);
+            textBox1.Location = new Point(394, 181);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(207, 27);
             textBox1.TabIndex = 16;
@@ -222,7 +223,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(891, 138);
+            label6.Location = new Point(889, 138);
             label6.Name = "label6";
             label6.Size = new Size(108, 25);
             label6.TabIndex = 17;
@@ -230,7 +231,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(891, 168);
+            textBox2.Location = new Point(889, 168);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(254, 82);
@@ -240,7 +241,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(396, 294);
+            label7.Location = new Point(394, 294);
             label7.Name = "label7";
             label7.Size = new Size(73, 25);
             label7.TabIndex = 19;
@@ -248,7 +249,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(396, 344);
+            textBox3.Location = new Point(394, 344);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(207, 27);
             textBox3.TabIndex = 20;
@@ -257,7 +258,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(891, 294);
+            label8.Location = new Point(889, 294);
             label8.Name = "label8";
             label8.Size = new Size(110, 25);
             label8.TabIndex = 21;
@@ -265,7 +266,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(891, 347);
+            textBox4.Location = new Point(889, 347);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(207, 27);
             textBox4.TabIndex = 20;
@@ -274,7 +275,7 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.HighlightText;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(396, 407);
+            dataGridView1.Location = new Point(394, 407);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -283,7 +284,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(1240, 364);
+            button9.Location = new Point(1238, 364);
             button9.Name = "button9";
             button9.Size = new Size(94, 37);
             button9.TabIndex = 24;
@@ -293,10 +294,9 @@
             // button8
             // 
             button8.BackColor = Color.OrangeRed;
-            button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = SystemColors.HighlightText;
-            button8.Location = new Point(800, 732);
+            button8.Location = new Point(798, 732);
             button8.Name = "button8";
             button8.Size = new Size(120, 45);
             button8.TabIndex = 25;
