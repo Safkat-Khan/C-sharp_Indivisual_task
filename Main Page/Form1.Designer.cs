@@ -97,6 +97,7 @@
             txtpass.Size = new Size(246, 30);
             txtpass.TabIndex = 3;
             txtpass.Text = "Enter Your Password";
+            txtpass.TextChanged += txtpass_TextChanged;
             txtpass.Enter += textBox2_Enter;
             txtpass.Leave += textBox2_Leave;
             // 

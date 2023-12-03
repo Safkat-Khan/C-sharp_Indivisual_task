@@ -46,6 +46,7 @@ namespace Login_page
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
+
             if (txtpass.Text == "")
             {
                 txtpass.Text = "Enter Your Password";
@@ -133,6 +134,11 @@ namespace Login_page
         private void button4_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Feature Will be added Soon");
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Wqzau2OlXHupsxH8px3Mue5/Z30DI81e6HXtmc8E6n8UkJ4kFGRcEZwvqKzTCbeUrz+TauWs4sPUhOZZcdv2g==",
+  "dgSpecHash": "NU0e4sxfF/4yxCVU3gjAxZF6YmLAuFpzVGti7S1KEZMXwHpKAW4NhXot0C5013sRAJZeL2h7lDW6JPNGCfwT+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Login_page\\Main_page.csproj",
+  "projectFilePath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Main Page\\Main_page.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CCB\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\CCB\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

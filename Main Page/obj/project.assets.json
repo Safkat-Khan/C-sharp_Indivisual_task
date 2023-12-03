@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Login_page\\Main_page.csproj",
+      "projectUniqueName": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Main Page\\Main_page.csproj",
       "projectName": "Main_page",
-      "projectPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Login_page\\Main_page.csproj",
+      "projectPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Main Page\\Main_page.csproj",
       "packagesPath": "C:\\Users\\CCB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Login_page\\obj\\",
+      "outputPath": "C:\\Users\\CCB\\OneDrive\\Desktop\\C# Indivisual_task\\Main Page\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
