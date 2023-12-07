@@ -9,7 +9,7 @@ namespace Login_page
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=SAFKAT-LAPTOP\MSSQLSERVER01;Initial Catalog=Register;Integrated Security=True");
+       // SqlConnection conn = new SqlConnection(@"Data Source=SAFKAT-LAPTOP\MSSQLSERVER01;Initial Catalog=Register;Integrated Security=True");
         private void button1_Enter(object sender, EventArgs e)
         {
 
@@ -110,11 +110,14 @@ namespace Login_page
              finally
              {
                  conn.Close();
-             }*/
-            Form3 f3 = new Form3();
-            f3.Owner = this;
-            f3.Show();
-            this.Hide();
+             }*/ 
+            if (txtemail.Text == "safkat123" || txtpass.Text == "123")
+            {
+                Form3 f3 = new Form3();
+                f3.Owner = this;
+                f3.Show();
+                this.Hide();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

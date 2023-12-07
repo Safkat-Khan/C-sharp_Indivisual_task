@@ -157,7 +157,6 @@
             txtpass.Size = new Size(256, 27);
             txtpass.TabIndex = 11;
             txtpass.UseSystemPasswordChar = true;
-            txtpass.TextChanged += txtpass_TextChanged;
             // 
             // txtconPass
             // 
@@ -188,7 +187,7 @@
             button1.TabIndex = 15;
             button1.Text = "⬅ Back";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+        //    button1.Click += button1_Click;
             // 
             // button2
             // 

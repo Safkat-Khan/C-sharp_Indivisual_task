@@ -86,6 +86,7 @@
             button1.TabIndex = 2;
             button1.Text = "🏠 Home";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -167,9 +168,9 @@
             label2.ForeColor = SystemColors.HighlightText;
             label2.Location = new Point(361, 36);
             label2.Name = "label2";
-            label2.Size = new Size(90, 23);
+            label2.Size = new Size(81, 23);
             label2.TabIndex = 4;
-            label2.Text = "UserName";
+            label2.Text = "safkat123";
             // 
             // label3
             // 

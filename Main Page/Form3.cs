@@ -20,12 +20,17 @@ namespace Login_page
         private void button7_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to close the form?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-             if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
 
-            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

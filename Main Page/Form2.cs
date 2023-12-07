@@ -17,7 +17,7 @@ namespace Login_page
         {
             InitializeComponent();
         }
-        string contStg = @"";
+     //   string contStg = @"";
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -49,6 +49,15 @@ namespace Login_page
             {
                 MessageBox.Show("Password do not match");
             }
+            else if (txtemail.Text == "safkat123" || txtpass.Text == "123" || txtconPass.Text == "123")
+            {
+                MessageBox.Show("Registration Successfull");
+                this.Close();
+                Form1 back = new Form1();
+                back.Show();
+            }
+
+            /*
             else
             {
                 using (SqlConnection sqlCon = new SqlConnection(contStg))
@@ -87,6 +96,8 @@ namespace Login_page
             back.Show();
 
 
+        }
+            */
         }
     }
 }
